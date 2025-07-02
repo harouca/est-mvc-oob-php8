@@ -1,7 +1,8 @@
 # Docker Compose LAMP com Apache2 e PHP 8 + PHPMyAdmin
-Ambiente LAMP (Linux + Apache + MySQL e PHP) para desenvolvimento de aplicações WEB rápido e simples, sem necessida de todas vez criar os arquivos, sentimos a necessidade de fazer um repositório que estivesse sempre disponível com as configurações e necessidades do que estamos acostumados a desenvolver.
+Ambiente LAMP (Linux + Apache + MySQL e PHP) para desenvolvimento de aplicações WEB rápido, simples e segura, sem necessida de todas vez criar os arquivos, sentimos a necessidade de fazer um repositório que estivesse sempre disponível com as configurações e necessidades do que estamos acostumados a desenvolver.
 À medida que fomos estudando e desenvolvendo melhor a estrutura dos projetos verificamos que havia brechas de seguranças e falhas de desenvolvimento. Diante disso, o estudo mudou para uma abordagem focada em MVC e separação de dados sensíveis aos locais públicos no provedor de hospedagem do site. Dai a necessidade de reestruturação dos projetos anteriores e adotar esse novo modelo de estudo.
-O presente repositório armazena a estrutura conforme citado acima, adaptado para usar a abordagem de Programação Orientada a Objetos (POO) ou em Inglês Objetc Oriented Programming (OOP.)
+
+O presente repositório armazena a estrutura, conforme citado acima, adaptado para usar a abordagem de Programação Orientada a Objetos (POO) ou em Inglês Objetc Oriented Programming (OOP).
 
 ## ✒️ Autores
 
@@ -22,12 +23,20 @@ Ficamos satisfeitos em quem quiser fazer sugestão ou participar com conteúdo q
 
 - ``Docker`` - Plataforma como serviço para virtualização de nível de sistema operacional para entregar software em pacotes chamados contêiners.
 - ``Visual Studio Code`` - Editor de Código-Fonte desenvolvido pela Microsoft que roda em Windows, Mac e Linux.
-- ``PHP 7.4`` - Linguagem de programação interpretada livre, usada para desenvolvimento de aplicações dinâmicas no lado do Servidor.
+- ``PHP 8.4`` - Linguagem de programação interpretada livre, usada para desenvolvimento de aplicações dinâmicas no lado do Servidor.
 - ``MySQL`` - Sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.
 - ``PHPMyAdmin`` - Aplicativo web livre e de código aberto desenvolvido em PHP para administração do MySQL e MariaDB pelo navegador.
 
+## 📄 Versões utilizadas 
+
+`Docker`- 28.3.0 - build 38b7060
+`Apache2` - 2.4.62 (Debian)
+`Mysql`- 9.3.0
+`PHP`- 8.2.28
+`phpMyAdmin`- 5.2.2
+
 ## 📁 Acesso ao projeto
-Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/harouca/mod-lamp-php8). Entretanto, se você está lendo esse conteúdo, provavelmente já chegou ao repositório do projeto. Usualmente torna-se necessário documentar e organizar tudo em TI - DEV pois nunca sabemos como e quando pode ser usado. Em todo caso, tudo está ai disponível.
+Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/harouca/est-mvc-oob-php8). Entretanto, se você está lendo esse conteúdo, provavelmente já chegou ao repositório do projeto. Usualmente torna-se necessário documentar e organizar tudo em TI - DEV pois nunca sabemos como e quando pode ser usado. Em todo caso, tudo está ai disponível.
 
 ## 📄 Licença
 
