@@ -49,7 +49,8 @@ error_reporting(E_ALL);
     }
 
 ?>
-<form action="">
+<form action="" method="POST">
+    <h2>Formulário de Cadastro</h2>
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required><br><br>
 
