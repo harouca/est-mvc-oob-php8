@@ -4,6 +4,24 @@ namespace App\Classes;
 use PDO;
 use PDOException;
 
+/**
+ * Classe para gerenciar a conexão com o banco de dados
+ * * @package App\Classes
+ * @author Humberto Vilar Arouca
+ * @version 1.0
+ * @since 2025-07-01
+ * * Esta classe é responsável por estabelecer e encerrar conexões com o banco de dados MySQL.
+ * * Ela utiliza as configurações definidas no arquivo de configuração config.php.
+ * * * A classe Conexao possui propriedades para armazenar as informações de conexão, como host, usuário, senha, banco e porta.
+ * 
+ * @param string $host Endereço do servidor MySQL
+ * @param string $usuario Nome de usuário para autenticação no MySQL
+ * @param string $senha Senha para autenticação no MySQL
+ * @param string $banco Nome do banco de dados a ser utilizado
+ * @param int $porta Porta do servidor MySQL (padrão: 3306)
+ * @param PDO|null $conexao Instância da conexão PDO, inicializada como null
+ */
+
 class Conexao {
     public string $host;
     public string $usuario;
@@ -12,6 +30,12 @@ class Conexao {
     public int $porta;
     public ?PDO $conexao = null;
 
+    
+    /**
+     * Construtor da classe Conexao
+     * Carrega as configurações do banco de dados a partir do arquivo config.php
+     * @throws RuntimeException Se o arquivo de configuração não for encontrado
+     */
    public function __construct() {
         $configPath = __DIR__ . '/../../config/config.php';
         if (!file_exists($configPath)) {
@@ -26,6 +50,11 @@ class Conexao {
         $this->porta   = $config['porta'];
     }
 
+    /**
+     * Método para estabelecer a conexão com o banco de dados
+     * Utiliza PDO para criar uma conexão com o MySQL
+     * @throws PDOException Se ocorrer um erro ao tentar conectar
+     */
     public function conectar(): void {
         try {
             $this->conexao = new PDO(
@@ -38,6 +67,9 @@ class Conexao {
         }
     }
 
+    /**
+     * Método para encerrar a conexão com o banco de dados
+     */
     public function desconectar(): void {
         $this->conexao = null;
         // echo "Conexão encerrada.";

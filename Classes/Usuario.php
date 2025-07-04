@@ -111,6 +111,7 @@ class Usuario
             return "<br>Erro ao atualizar o usuário.";
         }
 }
+
     public function excluir(int $id): string
 {
         $this->conexao = new Conexao();

@@ -8,7 +8,7 @@
 <body>
     <h1>Teste de Conexão</h1>
     <?php
-    $ConexaoPath = __DIR__ . '/Conexao.php';
+    $ConexaoPath = __DIR__ . '/Classes/Conexao.php';
     // Verifica se o arquivo Conexao.php existe
     if (!file_exists($ConexaoPath)) {
         die('Erro: O arquivo Conexao.php não foi encontrado.');
